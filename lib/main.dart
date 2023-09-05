@@ -51,6 +51,11 @@ class _MyHomePageState extends State<MyHomePage> {
           backgroundColor: Colors.blue,
           foregroundColor: Colors.white,
           titleSpacing: 100,
+          shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+              bottomRight: Radius.circular(25),
+              bottomLeft: Radius.circular(25)),
+           ),
           actions: [
             IconButton(onPressed:(){
               print("setting is clicked");
